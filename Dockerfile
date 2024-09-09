@@ -14,7 +14,7 @@ ADD . /vegeta
 RUN make generate
 RUN make vegeta
 
-FROM alpine:3.18.0
+FROM alpine:3.19.4
 
 COPY --from=BUILD /vegeta/vegeta /bin/vegeta
 
